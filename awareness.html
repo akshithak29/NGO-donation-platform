@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W8V9JXH7');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cause - Hope & Action Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Google Tag Manager (noscript) */
+        noscript iframe {
+            display:none;
+            visibility:hidden;
+        }
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1593113598332-cd288d0d650d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 3.8em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+        }
+        .hero p {
+            font-size: 1.4em;
+            margin-bottom: 40px;
+            max-width: 800px;
+            opacity: 0.9;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #27ae60; /* Green for action */
+            color: #fff;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .cta-button:hover {
+            background-color: #229a53;
+            transform: translateY(-3px);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-family: 'Merriweather', serif;
+            font-size: 2.8em;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+        .info-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+        .info-section img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .info-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        .info-content h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2em;
+            color: #34495e;
+            margin-top: 0;
+        }
+        .info-content p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .impact-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .impact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .impact-card h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5em;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        .impact-card p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .info-section {
+                flex-direction: column;
+            }
+            .info-section img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8V9JXH7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav class="navbar">
+        <a href="awareness.html">Our Cause</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="#donate-section" class="donate-nav-link">Donate</a>
+    </nav>
+
+    <header class="hero">
+        <h1>Hope for a Brighter Future</h1>
+        <p>Join Hope & Action Foundation in our mission to create lasting positive change in communities worldwide.</p>
+        <a href="#donate-section" class="cta-button hero-donate-button">Donate Today</a>
+    </header>
+
+    <div class="container">
+        <section class="info-section">
+            <img src="https://images.unsplash.com/photo-1532629345422-758c971d23ea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Community Support">
+            <div class="info-content">
+                <h2>Our Mission & Vision</h2>
+                <p>Hope & Action Foundation is dedicated to empowering underserved communities through education, healthcare, and sustainable development programs. We believe that every individual deserves the opportunity to thrive.</p>
+                <p>Our vision is a world where poverty is eradicated, education is accessible to all, and communities are self-sufficient and resilient. We work tirelessly to bring this vision to life, one project at a time.</p>
+                <a href="volunteer.html" class="cta-button learn-more-button">Learn More & Volunteer</a>
+            </div>
+        </section>
+
+        <h2 class="section-title">Our Impact So Far</h2>
+        <div class="impact-grid">
+            <div class="impact-card">
+                <h3>10,000+</h3>
+                <p>Children Educated</p>
+            </div>
+            <div class="impact-card">
+                <h3>50+</h3>
+                <p>Sustainable Projects</p>
+            </div>
+            <div class="impact-card">
+                <h3>25,000+</h3>
+                <p>Lives Improved</p>
+            </div>
+        </div>
+
+        <section id="donate-section" style="text-align: center; margin-top: 80px; padding: 40px; background-color: #e0f2f7; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+            <h2 style="font-size: 2.5em; color: #2c3e50; margin-bottom: 20px;">Make a Difference Today</h2>
+            <p style="font-size: 1.2em; color: #555; margin-bottom: 30px;">Your generous contribution helps us continue our vital work and expand our reach to more communities in need.</p>
+            <a href="thankyou.html?donation=true" class="cta-button donate-now-button">Donate Now</a>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Hope & Action Foundation. All rights reserved.</p>
+        <p>Contact us at info@hopeandaction.org</p>
+    </footer>
+</body>
+</html>
