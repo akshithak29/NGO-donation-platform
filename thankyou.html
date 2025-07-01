@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W8V9JXH7');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Donation! - Hope & Action Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f2f7; /* Light blue background for thank you */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Google Tag Manager (noscript) */
+        noscript iframe {
+            display:none;
+            visibility:hidden;
+        }
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex-grow: 1; /* Allows container to expand and push footer down */
+        }
+        h1 {
+            font-family: 'Merriweather', serif;
+            color: #27ae60; /* Green for success */
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+        .checkmark-icon {
+            font-size: 5em;
+            color: #27ae60;
+            margin-bottom: 30px;
+            display: block;
+            line-height: 1;
+        }
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .donation-summary {
+            background-color: #f0f8ff;
+            border: 1px solid #cceeff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        .donation-summary h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8em;
+            color: #34495e;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #cceeff;
+            padding-bottom: 10px;
+        }
+        .donation-summary p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        .donation-summary strong {
+            color: #2c3e50;
+        }
+        .cta-group {
+            margin-top: 40px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 0 10px 20px 10px; /* Adjust margin for spacing */
+        }
+        .cta-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: auto; /* Pushes footer to the bottom */
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .checkmark-icon {
+                font-size: 4em;
+            }
+            .container {
+                margin: 30px 20px;
+                padding: 30px;
+            }
+            .cta-button {
+                display: block;
+                width: calc(100% - 20px);
+                margin: 15px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8V9JXH7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav class="navbar">
+        <a href="awareness.html">Our Cause</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="awareness.html#donate-section" class="donate-nav-link">Donate</a>
+    </nav>
+
+    <div class="container">
+        <span class="checkmark-icon">&#10003;</span> <!-- Unicode checkmark -->
+        <h1>Thank You for Your Generosity!</h1>
+        <p>Your donation makes a real difference. We are incredibly grateful for your support in helping us empower communities.</p>
+        <p>A confirmation email has been sent to your inbox.</p>
+
+        <div class="donation-summary">
+            <h2>Donation Details</h2>
+            <p><strong>Transaction ID:</strong> <span id="transaction-id">TXN-HAF-123456789</span></p>
+            <p><strong>Amount:</strong> <span id="donation-amount">$50.00</span></p>
+            <p><strong>Date:</strong> <span id="donation-date">July 1, 2025</span></p>
+            <p><strong>Your Impact:</strong> Providing meals for 10 children.</p>
+        </div>
+
+        <div class="cta-group">
+            <p>Help us spread the word:</p>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com/awareness.html" target="_blank" class="cta-button share-facebook-button">Share on Facebook</a>
+            <a href="https://twitter.com/intent/tweet?text=I just supported @HopeAndActionFoundation! Join me in making a difference: https://yourwebsite.com/awareness.html" target="_blank" class="cta-button share-twitter-button">Share on Twitter</a>
+            <a href="awareness.html" class="cta-button back-to-cause-button">Learn More About Our Cause</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Hope & Action Foundation. All rights reserved.</p>
+        <p>Contact us at info@hopeandaction.org</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simulate dynamic content for demonstration
+            const urlParams = new URLSearchParams(window.location.search);
+            const isDonation = urlParams.get('donation'); // Check if redirected from a donation action
+
+            if (isDonation === 'true') {
+                // Simulate a random donation amount and ID for demonstration purposes
+                const randomAmount = (Math.random() * 100 + 10).toFixed(2); // $10 to $110
+                const randomId = 'TXN-HAF-' + Math.floor(Math.random() * 1000000000);
+                const today = new Date();
+                const dateString = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+                document.getElementById('transaction-id').innerText = randomId;
+                document.getElementById('donation-amount').innerText = `$${randomAmount}`;
+                document.getElementById('donation-date').innerText = dateString;
+            } else {
+                // If accessed directly or not from a donation flow, show generic message
+                document.getElementById('transaction-id').innerText = 'N/A';
+                document.getElementById('donation-amount').innerText = 'N/A';
+                document.getElementById('donation-date').innerText = 'N/A';
+                document.querySelector('.donation-summary').innerHTML = `
+                    <h2>Thank You!</h2>
+                    <p>Your support is invaluable. While no specific donation details are available, we appreciate your visit.</p>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>
