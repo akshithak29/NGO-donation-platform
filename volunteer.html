@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W8V9JXH7');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer with Us - Hope & Action Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Google Tag Manager (noscript) */
+        noscript iframe {
+            display:none;
+            visibility:hidden;
+        }
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+        .header-section {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            margin-bottom: 50px;
+        }
+        .header-section h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 3.5em;
+            margin-bottom: 15px;
+        }
+        .header-section p {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto 60px auto;
+            padding: 0 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #444;
+            font-size: 1.1em;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group select,
+        .form-group textarea {
+            width: calc(100% - 22px); /* Adjust for padding and border */
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+            outline: none;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            background-color: #3498db; /* Blue for primary action */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .submit-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+            font-size: 0.9em;
+        }
+        /* Message box styling (copied from previous) */
+        .message-box {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            min-width: 300px;
+        }
+        .message-box p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .message-box button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .message-box button:hover {
+            background-color: #0056b3;
+        }
+        /* Overlay for message box */
+        .overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8V9JXH7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav class="navbar">
+        <a href="awareness.html">Our Cause</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="awareness.html#donate-section" class="donate-nav-link">Donate</a>
+    </nav>
+
+    <header class="header-section">
+        <h1>Be the Change: Volunteer with Us!</h1>
+        <p>Your time and skills can make a profound difference in the lives of those we serve. Join our dedicated team of volunteers today.</p>
+    </header>
+
+    <div class="container">
+        <section class="volunteer-info">
+            <h2 style="font-family: 'Merriweather', serif; color: #2c3e50; font-size: 2em; margin-bottom: 20px;">Why Volunteer with Hope & Action?</h2>
+            <p style="font-size: 1.1em; color: #555; margin-bottom: 30px;">Volunteering is a rewarding experience that allows you to contribute directly to meaningful projects. You'll gain new skills, meet like-minded individuals, and become part of a global movement for good.</p>
+            <ul style="list-style: disc; margin-left: 20px; font-size: 1.05em; color: #666;">
+                <li>Support education initiatives for underprivileged children.</li>
+                <li>Assist in healthcare outreach programs.</li>
+                <li>Contribute to sustainable community development projects.</li>
+                <li>Help with administrative tasks and event planning.</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1593113616647-cd288d0d650d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Volunteers working together" style="width: 100%; height: auto; border-radius: 8px; margin-top: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        </section>
+
+        <h2 style="font-family: 'Merriweather', serif; color: #2c3e50; font-size: 2em; margin-top: 50px; margin-bottom: 20px;">Volunteer Application Form</h2>
+        <form id="volunteer-signup-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="interest">Area of Interest</label>
+                <select id="interest" name="interest" required>
+                    <option value="">-- Select an area --</option>
+                    <option value="education">Education Support</option>
+                    <option value="healthcare">Healthcare Outreach</option>
+                    <option value="development">Community Development</option>
+                    <option value="admin">Administration & Events</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="availability">Availability (e.g., Weekends, Evenings)</label>
+                <input type="text" id="availability" name="availability">
+            </div>
+            <div class="form-group">
+                <label for="message">Tell us about yourself and why you want to volunteer</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="submit-button volunteer-submit-button">Submit Application</button>
+        </form>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="messageBox" class="message-box">
+        <p id="messageBoxText"></p>
+        <button id="messageBoxClose">OK</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Hope & Action Foundation. All rights reserved.</p>
+        <p>Contact us at info@hopeandaction.org</p>
+    </footer>
+
+    <script>
+        function showMessageBox(message, callback) {
+            document.getElementById('messageBoxText').innerText = message;
+            document.getElementById('messageBox').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('messageBoxClose').onclick = function() {
+                document.getElementById('messageBox').style.display = 'none';
+                document.getElementById('overlay').style.display = 'none';
+                if (callback) callback();
+            };
+        }
+
+        document.getElementById('volunteer-signup-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // In a real application, you would send this data to a server
+            // For this simulation, we just show a confirmation message
+            showMessageBox("Thank you for your volunteer application! We will review it and get in touch soon.", function() {
+                // Optionally clear the form or redirect
+                document.getElementById('volunteer-signup-form').reset();
+            });
+        });
+    </script>
+</body>
+</html>
